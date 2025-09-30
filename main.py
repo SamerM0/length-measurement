@@ -10,6 +10,9 @@ def main():
 
     img1 = Image(imgS4)
     img2 = Image(imgS5)
+    img1.show_object_image()
+    img1.show_all_contours()
+    img1.show_object_image()
     width = LengthCalculator.calculate_length(img1.get_horizontal_length(), 12, img2.get_horizontal_length())
     print(f"width: {width} cm")
     
